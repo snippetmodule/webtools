@@ -55,8 +55,8 @@ var config = {
     files: [paths.target + '/**/*'],
     notify: false,
     open: false,
-    port: 7000,
-    reloadDelay: 1500,
+    port: 3000,
+    reloadDelay: 1000,
     server: {
       baseDir: paths.target,
       middleware: [
