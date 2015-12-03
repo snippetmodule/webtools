@@ -1,4 +1,5 @@
-import { bootstrap, provide } from 'angular2/angular2';
+import { provide } from 'angular2/angular2';
+import { bootstrap } from 'angular2/platform/browser';
 import { APP_BASE_HREF, ROUTER_PROVIDERS } from 'angular2/router';
 import { AUTH_PROVIDERS } from './modules/auth/providers';
 import { App } from './components/app/app';

@@ -7,6 +7,8 @@ module.exports = function(config) {
       {pattern: 'node_modules/es6-shim/es6-shim.min.js', included: true, watched: true},
       {pattern: 'node_modules/systemjs/dist/system.src.js', included: true, watched: true},
       {pattern: 'node_modules/angular2/bundles/angular2.js', included: true, watched: true},
+      {pattern: 'node_modules/angular2/bundles/http.js', included: true, watched: true},
+      {pattern: 'node_modules/angular2/bundles/router.js', included: true, watched: true},
       {pattern: 'node_modules/angular2/bundles/testing.js', included: true, watched: true},
       {pattern: 'karma.entry.js', included: true, watched: true},
 
