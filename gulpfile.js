@@ -19,10 +19,9 @@ var autoprefixer = require('autoprefixer'),
 var paths = {
   lib: {
     src: [
-      'node_modules/angular2/bundles/angular2.*',
-      'node_modules/angular2/bundles/http.*',
-      'node_modules/angular2/bundles/router.*',
-      'node_modules/angular2/bundles/testing.*',
+      'node_modules/angular2/bundles/angular2.min.js',
+      'node_modules/angular2/bundles/http.min.js',
+      'node_modules/angular2/bundles/router.min.js',
       'node_modules/es6-shim/es6-shim.{map,min.js}',
       'node_modules/systemjs/dist/system.{js,js.map}'
     ],

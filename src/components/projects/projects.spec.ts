@@ -12,7 +12,6 @@ import {
   xit,
   beforeEachProviders,
   inject,
-  injectAsync,
   TestComponentBuilder
 } from 'angular2/testing';
 
@@ -31,8 +30,8 @@ class TestComponent {}
 describe('Projects', () => {
   beforeEachProviders(() => [AuthService, ProjectService]);
 
-  it('should display a list of projects', injectAsync([TestComponentBuilder], tcb => {
-    return tcb.createAsync(Projects)
+  it('should display a list of projects', inject([TestComponentBuilder], tcb => {
+    tcb.createAsync(Projects)
       .then(fixture => {
         fixture.detectChanges();
         let compiled = fixture.debugElement.nativeElement;

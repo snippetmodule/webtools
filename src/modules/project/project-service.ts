@@ -18,7 +18,7 @@ export class ProjectService {
         else {
           this.list = [
             {name: 'Project 1'},
-            {name: 'Project 2'},
+            {name: 'Project 2'}
           ];
 
           return this.list;
