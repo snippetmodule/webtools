@@ -30,7 +30,7 @@ describe('Home', () => {
     tcb.createAsync(Home)
       .then(fixture => {
         fixture.detectChanges();
-        let compiled = fixture.debugElement.nativeElement;
+        let compiled = fixture.nativeElement;
 
         expect(compiled.querySelector('h3')).toHaveText('Hello world!');
       });
@@ -41,7 +41,7 @@ describe('Home', () => {
       .createAsync(Home)
       .then(fixture => {
         fixture.detectChanges();
-        let compiled = fixture.debugElement.nativeElement;
+        let compiled = fixture.nativeElement;
 
         expect(compiled.querySelector('h3')).toHaveText('Hello world!');
       });

@@ -34,9 +34,9 @@ describe('Projects', () => {
     tcb.createAsync(Projects)
       .then(fixture => {
         fixture.detectChanges();
-        let compiled = fixture.debugElement.nativeElement;
+        let compiled = fixture.nativeElement;
 
-        return fixture.debugElement.componentInstance.loaded.then(() => {
+        return fixture.componentInstance.loaded.then(() => {
           fixture.detectChanges();
           expect(compiled.querySelectorAll('li').length).toBe(2);
         });
