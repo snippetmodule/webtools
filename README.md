@@ -3,7 +3,7 @@
 
 # Angular2 Seed
 
-- Angular `2.0.0-alpha.47`
+- Angular `2.0.0-alpha.48`
 - BrowserSync
 - ES6 Shim
 - Gulp `4.0.0-alpha.2`
