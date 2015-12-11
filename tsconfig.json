@@ -7,7 +7,7 @@
     "experimentalAsyncFunctions": true,
     "experimentalDecorators": true,
     "listFiles": true,
-    "module": "system",
+    "module": "commonjs",
     "moduleResolution": "node",
     "noEmitHelpers": false,
     "noImplicitAny": false,

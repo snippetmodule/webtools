@@ -16,7 +16,7 @@ import { Projects } from '../projects/projects';
 
   template: `
     <header>
-      <a [router-link]="['/Home']">Home</a> | <a [router-link]="['/Projects']">Projects</a>
+      <a [routerLink]="['/Home']">Home</a> | <a [routerLink]="['/Projects']">Projects</a>
     </header>
 
     <main>
