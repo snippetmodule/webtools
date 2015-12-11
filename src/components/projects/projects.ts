@@ -3,6 +3,7 @@ import { ProjectService } from '../../modules/project/project-service';
 
 
 @Component({
+  moduleId: module.id,
   selector: 'projects',
   viewProviders: [
     ProjectService
@@ -13,8 +14,8 @@ import { ProjectService } from '../../modules/project/project-service';
   directives: [
     NgFor
   ],
-  styleUrls: ['components/projects/projects.css'],
-  templateUrl: 'components/projects/projects.html'
+  styleUrls: ['./projects.css'],
+  templateUrl: './projects.html'
 })
 
 export class Projects {

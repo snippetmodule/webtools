@@ -11,7 +11,6 @@ System.config({
   packages: {
     'base/target': {
       defaultExtension: 'js',
-      format: 'register',
       map: Object.keys(window.__karma__.files)
         .filter(filterSourceFiles)
         .reduce(function(mapping, path){
