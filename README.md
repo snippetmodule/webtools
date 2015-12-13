@@ -2,6 +2,7 @@
 
 
 # Angular2 Seed
+A minimal setup for small Angular2 apps.
 
 - Angular `2.0.0-alpha.52`
 - BrowserSync
@@ -14,44 +15,60 @@
 - SystemJS
 
 
-## Prerequisites
-Node `~5`
+## Getting Started
+### Prerequisites
+- `node >=4.2`
+
+### Installing Global Dependencies
+```bash
+$ npm install -g karma-cli
+```
+
+##### Gulp v4 (optional)
+```bash
+$ npm install -g gulpjs/gulp-cli#4.0
+```
+The gulp tasks for this project require gulp v4-alpha. If you don't wish to globally install the v4 gulp-cli, you can run the gulp tasks using the locally installed gulp under `./node_modules/.bin` — for example:
+```bash
+$ ./node_modules/.bin/gulp
+```
 
 
-## Installing dependencies
+### Installing Project-local Dependencies
 ```bash
 $ npm install
 ```
 
 
-#### Gulp v4 (optional)
+## Commands
+#### Build
 ```bash
-$ npm install -g gulpjs/gulp-cli#4.0
+$ gulp build
 ```
-The gulp tasks require gulp v4-alpha. If you don't wish to globally install the v4 gulp-cli, you can run the gulp tasks using the locally installed gulp under `./node_modules/.bin` — for example:
-```bash
-$ ./node_modules/.bin/gulp test
-```
+- Clean the `/target` directory
+- Build the sources to `/target` directory
 
-
-## Gulp Tasks
-#### Developing
+#### Develop
 ```bash
 $ gulp
 ```
-Executing the default `gulp` command will:
-- Build the project
-- Start the **BrowserSync** server at <a href="http://localhost:3000" target="_blank">localhost:3000</a>
-- Watch for changes to the source files and process changes
+- Clean the `/target` directory
+- Build the sources to `/target` directory
+- Start the BrowserSync server at <a href="http://localhost:3000" target="_blank">localhost:3000</a>
+- Watch for changes to your source files
+- Live-reload the browser
 
+#### Lint (tslint)
+```bash
+$ gulp lint
+```
 
-#### Testing
+#### Test (single-run)
+```bash
+$ gulp test
+```
+
+#### Test (watch mode)
 ```bash
 $ gulp test.watch
 ```
-Executing `gulp test.watch` will:
-- Run the test suites
-- Watch for changes to the source files
-- Re-run the tests whenever the sources are modified
-
-For a single test run without auto-watch, execute `gulp test` instead.

@@ -1,4 +1,4 @@
-import { provide } from 'angular2/angular2';
+import { provide } from 'angular2/core';
 import { AuthRouteHelper } from './auth-route-helper';
 import { AuthService } from './auth-service';
 
