@@ -4,7 +4,7 @@
 # Angular2 Seed
 A minimal setup for small Angular2 apps.
 
-- Angular `2.0.0-alpha.52`
+- Angular `2.0.0-alpha.53`
 - BrowserSync
 - ES6 Shim
 - Gulp `4.0.0-alpha.2`
