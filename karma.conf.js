@@ -6,10 +6,12 @@ module.exports = (config) => {
       // paths loaded directly by Karma
       {pattern: 'node_modules/es6-shim/es6-shim.min.js', included: true, watched: true},
       {pattern: 'node_modules/systemjs/dist/system.src.js', included: true, watched: true},
+      {pattern: 'node_modules/rxjs/bundles/Rx.js', included: true, watched: true},
+      {pattern: 'node_modules/angular2/bundles/angular2-polyfills.js', included: true, watched: true},
       {pattern: 'node_modules/angular2/bundles/angular2.js', included: true, watched: true},
       {pattern: 'node_modules/angular2/bundles/http.js', included: true, watched: true},
       {pattern: 'node_modules/angular2/bundles/router.js', included: true, watched: true},
-      {pattern: 'node_modules/angular2/bundles/testing.js', included: true, watched: true},
+      {pattern: 'node_modules/angular2/bundles/testing.dev.js', included: true, watched: true},
       {pattern: 'karma.entry.js', included: true, watched: true},
 
       // paths loaded via module imports
@@ -31,15 +33,10 @@ module.exports = (config) => {
 
     logLevel: config.LOG_INFO,
 
-    // amount of time to wait for a message from browser before disconnecting
-    // default is 10000ms (10 seconds)
-    browserNoActivityTimeout: 300000, // 5 mins
-
     autoWatch: true,
 
     singleRun: false,
 
-    // custom launcher for travis-ci
     customLaunchers: {
       TRAVIS_CHROME: {
         base: 'Chrome',
