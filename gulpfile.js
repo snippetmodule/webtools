@@ -20,9 +20,11 @@ const paths = {
   lib: {
     src: [
       'node_modules/angular2/bundles/angular2.{js,min.js}',
+      'node_modules/angular2/bundles/angular2-polyfills.{js,min.js}',
       'node_modules/angular2/bundles/http.{js,min.js}',
       'node_modules/angular2/bundles/router.{js,min.js}',
       'node_modules/es6-shim/es6-shim.{map,min.js}',
+      'node_modules/rxjs/bundles/Rx.{js,min.js,min.js.map}',
       'node_modules/systemjs/dist/system.{js,js.map}'
     ],
     target: 'target/lib'

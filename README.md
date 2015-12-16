@@ -4,13 +4,13 @@
 # Angular2 Seed
 A minimal setup for small Angular2 apps.
 
-- Angular `2.0.0-alpha.53`
+- Angular `2.0.0-beta.0`
 - BrowserSync
 - ES6 Shim
 - Gulp `4.0.0-alpha.2`
 - Jasmine
 - Karma
-- Typescript `~1.7.3`
+- Typescript `~1.7.5`
 - SASS
 - SystemJS
 
