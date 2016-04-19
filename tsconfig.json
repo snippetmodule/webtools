@@ -1,6 +1,4 @@
 {
-  "version": "1.7.5",
-
   "compilerOptions": {
     "declaration": false,
     "emitDecoratorMetadata": true,
@@ -15,5 +13,10 @@
     "removeComments": true,
     "sourceMap": true,
     "target": "es5"
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
+  ]
 }

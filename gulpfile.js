@@ -56,7 +56,7 @@ const config = {
   browserSync: {
     files: [paths.target + '/**/*'],
     notify: false,
-    open: false,
+    open: true,
     port: 3000,
     reloadDelay: 500,
     server: {
