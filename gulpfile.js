@@ -151,27 +151,25 @@ gulp.task('ts', () => {
 //===========================
 //  BUILD
 //---------------------------
-gulp.task('build', gulp.series(
+gulp.task('build', [
   'clean.target',
   'copy.html',
   'copy.lib',
   'sass',
-  'ts'
-));
+  'ts']);
 
 
 //===========================
 //  DEVELOP
 //---------------------------
-gulp.task('default', gulp.series(
+gulp.task('default', [
   'build',
-  'serve',
-  function watch(){
+      'serve'],
+    function () {
     gulp.watch(paths.src.html, gulp.task('copy.html'));
     gulp.watch(paths.src.sass, gulp.task('sass'));
     gulp.watch([paths.src.ts, paths.typings.watch], gulp.task('ts'));
-  }
-));
+    });
 
 
 //===========================
@@ -205,10 +203,9 @@ gulp.task('karma.run', done => {
 });
 
 
-gulp.task('test', gulp.series('lint', 'build', 'karma'));
+gulp.task('test', ['lint', 'build', 'karma']);
 
 
-gulp.task('test.watch', gulp.parallel(
-  gulp.series('lint', 'build', 'karma.watch'),
-  () => gulp.watch(paths.src.ts, gulp.series('ts', 'karma.run'))
-));
+gulp.task('test.watch', ['lint', 'build', 'karma.watch'],
+    () => gulp.watch(paths.src.ts, ['ts', 'karma.run'])
+);
