@@ -18,6 +18,10 @@ tmp/
 .idea/
 typings
 .project
+/src/*/*.js
+/src/*/*.js.map
+/src/*/*/*.js
+/src/*/*/*.js.map
 *.iml
 
 
