@@ -4,12 +4,6 @@
   "description": "webtools in chrome",
   "homepage": "https://github.com/r-park/angular2-seed",
   "repository": "https://github.com/snippetmodule/webtools.git",
-  "author": {
-    "name": "wangfaxi",
-    "email": "wangfaxi1985@gmail.com"
-  },
-  "license": "MIT",
-  "private": true,
   "engines": {
     "node": ">=4.2"
   },

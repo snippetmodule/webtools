@@ -1,19 +1,15 @@
-import { Component, View } from 'angular2/core';
-import { RouteConfig, RouterLink, RouterOutlet } from 'angular2/router';
-import { Home } from '../home/home';
-import { Projects } from '../projects/projects';
+import {Component} from "angular2/core";
+import {RouteConfig, RouterLink, RouterOutlet} from "angular2/router";
+import {Home} from "../home/home";
+import {Projects} from "../projects/projects";
 
 
 @Component({
-  selector: 'app'
-})
-
-@View({
+  selector: 'app',
   directives: [
     RouterLink,
     RouterOutlet
   ],
-
   template: `
     <header>
       <a [routerLink]="['/Home']">Home</a> | <a [routerLink]="['/Projects']">Projects</a>

@@ -1,21 +1,8 @@
 /* tslint:disable:no-unused-variable typedef */
-import {
-  afterEach,
-  beforeEach,
-  describe,
-  fdescribe,
-  xdescribe,
-  expect,
-  it,
-  fit,
-  xit,
-  beforeEachProviders,
-  inject,
-  TestComponentBuilder
-} from 'angular2/testing';
-
-import { AuthService } from '../auth/auth-service';
-import { ProjectService } from './project-service';
+/// <reference path="../../../typings/main/ambient/jasmine/index.d.ts" />
+import {describe, expect, it, beforeEachProviders, inject} from "angular2/testing";
+import {AuthService} from "../auth/auth-service";
+import {ProjectService} from "./project-service";
 
 
 describe('ProjectService', () => {

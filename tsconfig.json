@@ -2,7 +2,6 @@
   "compilerOptions": {
     "declaration": false,
     "emitDecoratorMetadata": true,
-    "experimentalAsyncFunctions": true,
     "experimentalDecorators": true,
     "listFiles": true,
     "module": "commonjs",

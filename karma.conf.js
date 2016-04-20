@@ -1,10 +1,12 @@
+/// <reference path="./typings/jasmine/jasmine.d.ts" />
+
 module.exports = (config) => {
   config.set({
     frameworks: ['jasmine'],
 
     files: [
       // paths loaded directly by Karma
-      {pattern: 'node_modules/es6-shim/es6-shim.min.js', included: true, watched: true},
+      {pattern: 'node_modules/es6-shim/es6-shim.js', included: true, watched: true},
       {pattern: 'node_modules/systemjs/dist/system.src.js', included: true, watched: true},
       {pattern: 'node_modules/rxjs/bundles/Rx.js', included: true, watched: true},
       {pattern: 'node_modules/angular2/bundles/angular2-polyfills.js', included: true, watched: true},

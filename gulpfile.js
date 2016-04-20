@@ -39,7 +39,7 @@ const paths = {
   target: 'target',
 
   typings: {
-    entries: 'typings/tsd.d.ts',
+    entries: 'typings/brower.d.ts',
     watch: 'typings/**/*.ts'
   }
 };
