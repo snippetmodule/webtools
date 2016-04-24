@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <title>webtools in chrome</title>
+    <title>webtools in chrome</title>
 
-  <base href="/">
+    <base href="/">
 
-  <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
 
 
 <body>
-  <app></app>
+<app></app>
 
 
-  <script src="lib/es6-shim.min.js"></script>
-  <script src="lib/system.js"></script>
-  <script>
+<script src="lib/es6-shim.min.js"></script>
+<script src="lib/system.js"></script>
+<script>
     System.config({
-      baseURL: './',
-      defaultJSExtensions: true,
-      warnings: true
+        baseURL: './',
+        defaultJSExtensions: true,
+        warnings: true
     });
-  </script>
-  <script src="lib/Rx.js"></script>
-  <script src="lib/angular2-polyfills.js"></script>
-  <script src="lib/angular2.js"></script>
-  <script src="lib/http.js"></script>
-  <script src="lib/router.js"></script>
-  <script>
+</script>
+<script src="lib/Rx.js"></script>
+<script src="lib/angular2-polyfills.js"></script>
+<script src="lib/angular2.js"></script>
+<script src="lib/http.js"></script>
+<script src="lib/router.js"></script>
+<script src="lib/ng2-bootstrap.min.js"></script>
+<script>
     System.import('main')
-      .catch(console.error.bind(console));
-  </script>
+            .catch(console.error.bind(console));
+</script>
 </body>
 </html>
